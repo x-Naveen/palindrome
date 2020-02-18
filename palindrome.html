@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body style="background:darkblue;color:white">
+<p>check it is palindrome or not</p>
+<p>Click the button to view the output</p>
+<input type="text" id="getIt"/>
+<button onclick="myfunction()">click</button>
+<p>String before: <span id="demo"></span></p>
+
+
+<p id="demo1"></p>
+
+<script>
+
+function myfunction(){
+
+
+var str1 = document.getElementById("getIt").value;
+ 
+console.log(str1);
+ 
+var tom = str1.split("");
+var sim = tom.reverse();
+var yyy = sim.join("");
+
+
+console.log(yyy);
+
+if(str1 == yyy){
+document.getElementById('demo').innerHTML = "It is a palindrome";
+}
+else{
+document.getElementById('demo').innerHTML = "sorry,It is not a palindrome";
+}
+ 
+}
+
+
+
+</script>
+
+</body>
+</html>
+
